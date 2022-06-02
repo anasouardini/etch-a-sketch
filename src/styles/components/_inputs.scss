@@ -1,0 +1,9 @@
+@use "../abstracts" as abstracts;
+
+input:not(:placeholder-shown):not(:focus):invalid{
+  border: 1px solid red;
+}
+
+input:valid{
+  border: 1px solid green;
+}

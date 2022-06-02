@@ -1,0 +1,15 @@
+@use "../abstracts" as abstracts;
+
+fieldset {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+  }
+  
+  legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3px 6px;
+    background-color: abstracts.$main-clr;
+  }

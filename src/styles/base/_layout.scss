@@ -1,0 +1,19 @@
+/*===========================================
+================ CHUNK: BASE/LAYOUT
+===========================================*/
+@use "../abstracts/" as abstracts;
+
+
+body{
+    color: #444;
+    margin: 40px auto;
+}
+
+.grid-container{
+    margin: 100px auto;
+    border: 1px solid #bada55;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+}
+

@@ -1,0 +1,52 @@
+@use "../abstracts" as abstracts;
+
+form{
+    width: 500px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label:nth-of-type(n+3){
+        margin-top: 25px;
+    }
+
+    label{
+        font-weight: light;
+        font-size: .65rem;
+        letter-spacing: 1px;
+        color: #555;
+        text-transform: uppercase;
+        display: relative;
+        transform: scale(1);
+    
+        &.error::before{
+            content: "passwords don't match";
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+            color: red;
+            font-size: .6rem;
+            padding-left: 5px;
+        }
+    }
+
+    input{
+        font-size: .9rem;
+        padding: 5px 10px;
+        display: block;
+        margin-top: 3px;
+        border: 1px solid abstracts.$main-clr;
+        border-radius: 5px;
+    }
+
+    > button{
+        margin-top: 30px;
+        background: abstracts.$main-clr;
+        color: white;
+        padding: 5px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
