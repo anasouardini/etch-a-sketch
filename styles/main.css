@@ -390,7 +390,7 @@ a:visited {
 ===========================================*/
 body {
   color: #444;
-  margin: 40px auto;
+  padding-top: 40px;
 }
 
 .controls {
