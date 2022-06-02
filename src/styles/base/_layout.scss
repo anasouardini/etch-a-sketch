@@ -8,9 +8,16 @@ body{
     color: #444;
     margin: 40px auto;
 }
-
+.controls{
+    margin: 10px auto;
+    width: 400px;
+    input,
+    button{
+        width: 95px;
+    }
+}
 .grid-container{
-    margin: 100px auto;
+    margin: 40px auto;
     border: 1px solid #bada55;
     display: grid;
     justify-items: stretch;
